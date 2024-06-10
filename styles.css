@@ -1,0 +1,105 @@
+body{
+    background-color: rgba(255, 255, 255, 0.718);
+    color: hsl(0, 0%, 0%);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#Heading{
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.593);
+}
+#App-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 0%);
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 500px;
+    align-self: center;
+    color: white;
+    height: 80vh;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width:0px;
+}
+.task{
+    display: flex;
+    background-color: hsla(0, 3%, 68%, 0.593);
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    width:400px;
+
+}
+.task #taskName{
+    background-color: hsla(0, 3%, 68%, 0) ;
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    font-size: 1rem;
+    font-family:sans-serif;
+
+
+}
+.Tick{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#AddNew{
+    margin:20px 33px 0 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: hsla(0, 3%, 68%, 0.593);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-self: flex-end;
+    outline: none;
+    border: none;
+}
+#AddNew:hover{
+    background-color: hsla(0, 3%, 68%, 0.637);
+    outline: none;
+    cursor: pointer;
+}
+#AddNew:active{
+    background-color: hsla(0, 3%, 68%, 0.666);
+    outline: none;
+}
+.deleteTask{
+    width:30px;
+    height:30px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+.deleteTask:hover{
+    opacity: 0.8;
+}
+.deleteTask:active{
+    opacity: 0.6;
+}
+.FadeOut{
+    animation: FadeOut 500ms;
+}
+@keyframes FadeOut{
+    from{opacity: 1;}
+    to {opacity: 0;}
+}
+.FadeIn{
+    animation: FadeIn 500ms;
+}
+@keyframes FadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
